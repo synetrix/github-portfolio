@@ -1,3 +1,3 @@
-# synetrix.github.io
+# synetrix portfolio
 
 portfolio website 
