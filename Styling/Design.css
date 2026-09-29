@@ -1,0 +1,73 @@
+/*Component level styling
+
+- button styles
+- card styles
+- Navbar styles
+- footer styles
+- form styles
+- layout rules
+
+*/
+
+/* General structure*/
+*{
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    font-family: var(--fontPrimary);
+    transition: 
+                background-color var(--transition-normal)
+                color var(--transition-normal)
+}
+
+header{
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   
+   padding: 1rem 4rem;
+
+   background-color:  var(--bg-secondary);
+   border-bottom: 1px solid var(--border-color);
+
+}
+
+
+/* design patterns*/
+
+/*header*/
+.Horisontal-nav{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+.Horisontal-nav a{
+    color: var(--text-primary);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color var(--transition-fast);
+}
+.Horisontal-nav a:hover{
+    color: var(--accent-color);
+}
+
+.Burger-menu{
+    display: none;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 0.5rem;
+}
+.Burger-menu span{
+    display: block;
+    width: 25px;
+    height:2px;
+    margin: 5px 0;
+    background-color: var(--text-secondary);
+}

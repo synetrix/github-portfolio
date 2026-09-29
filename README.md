@@ -1,36 +1,112 @@
-# synetrix portfolio
+# SYNETRIX
+ 
+ Elegant, clean and responisve design using regular design patterns. Muli-device compatibility along with accessibility features. Clean animation adn transition features for a professional guided layout through the content provided.
 
-Welcom to my Profolio website , Learn more about me, what I do and How I contribute.
+ Features:
+ - light and dark mode compatibility
+ - Chat bot assistant Querying
+ - Automation of navigation 
+ - Hands free navigation 
+ - multi-lingual compatibility
+ 
+ ## Content structure
+ ### Sections
+ 1. front page and header:
+        Clean and branded design featuring clean design principles and responsive best practices
+ 2. About me:
+        A clean and polished self introductor, mission statement and objectives.
+ 3. Projects and experiences:
+        Turn wheel for projects , Easy on the eyes practice with manual and automatic project navigation.
+ 4. Contact and Community:
+        Community links and breakdowns as cross stacked flash cards in brick formation.
+ 5. Footer:
+        Social platforms and standardised closing best practices.
 
-The website consists of FIVE sections 
-- About
-- Expertise
-- Projects
-- Join 
-- Contact
 
-ABOUT
-This section is a summary of My professional Life, aspirations and future development direction.
+### logic Structure
+Filing structure
+|__Palette
+|__Animations
+|__Automation and navigation 
+|__language_Logic and Audio
+|__ Language model or API handling
+|__Chat bot logic
+|__Images
+|__main page, Style page, Javascsript page
 
-EXPERTISE
-The different Domain and Fields of specialisation I research, learn and perform under. Giving way to new, interesting and ground breaking projects and Innovative approaches.
 
-PROJECTS
-A galary collection of my most recent and Impressive projects for display to possible employers, people of interest and collaborators. The rest can be accessed though the embedded link to my github profile for further exploration.
+## API and Frameworks
 
-JOIN
-Follow me on different platforms and join our community and interactive talks. 
-Approach and Collaborate or just come as a friend. All are welcom. We would love to see you there.
+## website technical overview
+### Clean architectual pattern 
+Keeps your styling logic modular, readable, and scalable.
 
-CONTACT
-To lazy to find my email, I got you. Use the Quick message feature to send me a message directly from the website.
+- ACS style structuring
+       - Palette.css :
+              color definitions. (THEMES) --> browser/ system default
+       - Design.css:
+              layout, spacing, typography, component styling. 
+       - Responsive.css:
+              Different media sizes ()
 
-////////////////////
+                 :root
+                   │
+          ┌────────┴────────┐
+          │                 │
+       LIGHT              DARK
+     variables          variables
+          │                 │
+          └────────┬────────┘
+                   ↓
+             Components
+                   │
+          ┌────────┼────────┐
+          ↓        ↓        ↓
+        body     cards    buttons
 
-WEBSITE FEATURES
+`Logic Flow`
+Palette
+   ↓
+Design
+   ↓
+Responsive
 
-- Light and dark mode
-- Subtle scroll animation
-- Minimilistic and interactive Design
-- Luxury glassmorphism styling
+### clean structural layers
+HTML
+│
+├── Header
+│   ├── Brand
+│   ├── Navigation
+│   └── Mobile menu
+│
+├── Main
+│   ├── Hero
+│   ├── About
+│   ├── Projects
+│   └── Contact
+│
+└── Footer
+    ├── Brand
+    ├── Links
+    ├── Social
+    └── Legal
 
+CSS
+│
+├── Theme
+├── Variables
+├── Reset
+├── Global styles
+├── Header
+├── Front page
+├── About
+├── Projects
+├── Contact
+└── Footer
+
+JavaScript
+│
+├── Theme switching
+├── Mobile navigation
+├── Dynamic year
+└── Interactive features

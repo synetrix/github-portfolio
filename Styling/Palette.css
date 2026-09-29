@@ -1,0 +1,55 @@
+/* raw design tokens
+- colors
+- graidnets
+- Shadows
+- borders
+- spacing units
+- Typography scale
+- opacity values
+*/
+
+@media (prefers-color-scheme: light){
+    :root {
+    /*variables for custom css properties  --> THEMES */
+    /*colors*/
+    --bg-primary : #ffffff;
+    --bg-secondary: #f4f4f5;
+
+    --text-primary: #18181b;
+    --text-seconday: #71717a;
+
+    --border-color: #e4e4e7;
+
+    --accent-color: #60a5fa;
+    
+    /* typography*/
+    --font-primary: "Inter", Arial, Sans-serif;
+
+    /* spacing*/
+    --space-cards : 0.25rem;
+    --space-nesting: 0.5rem;
+    --space-section: 4rem;
+
+    /* borders*/
+    --border-inner-liner : 4px;
+    --border-outliner: 8px;
+
+    /* transitions*/
+    --transition-fast: 0.2s ease;
+    --transition-normal: 0.3s ease;
+}
+}
+
+@media (prefers-color-scheme: dark){
+    .dark {
+    --bg-primary: #09090b;
+    --bg-secondary: #18181b;
+
+    --text-primary: #fafafa;
+    --text-secondary: #a1a1aa;
+
+    --border-color: #27272a;
+
+    --accent-color: #60a5fa;
+}
+}
